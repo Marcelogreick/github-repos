@@ -1,0 +1,61 @@
+.Container {
+  display: flex;
+  height: 100vh;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  height: 25rem;
+  width: 25rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    img {
+      height: 7rem;
+      width: 7rem;
+      margin-left: 0.8rem;
+    }
+  }
+
+  button {
+    height: 4rem;
+    border-radius: 3rem;
+    background: #101213;
+    border: 0;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    transition: filter 0.2s;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  
+    svg:first-child {
+      margin-right: 1rem;
+    }
+  
+    &:hover {
+      filter: brightness(0.85);
+      transition: filter 0.2s;
+    }
+  }
+}
