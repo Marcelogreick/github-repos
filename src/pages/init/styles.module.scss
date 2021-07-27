@@ -1,4 +1,4 @@
-.header {
+.content {
   padding: 5rem 0 0 5rem;
 
   form {
@@ -8,7 +8,7 @@
 
     input {
       flex: 1;
-      height: 70px;
+      height: 4.4rem;
       padding: 0 24px;
       border: 0;
       border-radius: 5px 0 0 5px;
@@ -22,17 +22,84 @@
     }
 
     button {
-      width: 10rem;
-      height: 70px;
+      width: 8rem;
+      height: 4.4rem;
       background: #04d361;
       border-radius: 0 5px 5px 0;
       border: 0;
       color: #FFF;
       font-weight: bold;
       transition: background-color 0.2s;
+
       &:hover {
         background: #05b956
       }
+    }
   }
+  h1 {
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+    color: #4e4e4e;
+  }
+
+  div {
+    display: flex;
+    max-width: 25rem;
+    justify-content: space-between;
+
+    button {
+      margin-top: 1rem;
+      width: 10rem;
+      height: 3rem;
+      background: #04d361;
+      border-radius: 10px;
+      font-size: 1rem;
+      border: 0;
+
+      &:hover {
+        background: #05b956
+      }
+    }
+  }
+}
+
+.repository {
+  margin-top: 80px;
+  max-width: 42rem;
+  padding: 0 0 0 5rem;
+
+  div {
+    background: #FFF;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+      
+      &:hover {
+        transform: translateX(10px)        
+      }
+      & + div {
+        margin-top: 12px;
+      }
+      img {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wra;
+        margin-left: 16px;
+        strong {
+          font-size: 0.9rem;
+          color: #3D3D4D;
+        }
+      }
   }
 }
